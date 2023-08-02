@@ -1,7 +1,7 @@
 
 import "./cartItem.css";
 import Items from "../data";
-import { cartSlice, removeItem, changeQuantity } from "../features/shoppingCart.slide";
+import { removeItem, changeQuantity } from "../features/shoppingCart.slide";
 
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import { useDispatch } from "react-redux";
@@ -59,7 +59,7 @@ export default function CartItem() {
               data-original-title="Remove item"
               onClick={() => dispatch(removeItem(item.id))}
             >
-              Xoas
+              Xóa
             </a>
           </td>
         </tr>
